@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #e9e6ff;
+        padding: 2rem;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #611214;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.2rem;
+    }
+    .card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #faffe6;
+        padding: 1.5rem;
+        border: 2px solid #881515;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: transform 0.2s;
+    }
+        .card:hover {
+        transform: translateY(-5px);
+    }
+    .card h2 {
+        color: #1a2a6c;
+        font-size: 1.3rem;
+    }
+</style>
+</head>
+<body>
+    <h1>Danh sách môn học yêu thích</h1>
+    <div class="grid-container">
+        <div class="card"><h2>Marketing số</h2></div>
+        <div class="card"><h2>Nguyên lý kế toán</h2></div>
+        <div class="card"><h2>Thương mại điện tử</h2></div>
+        <div class="card"><h2>Tài chính doanh nghiệp</h2></div>
+        <div class="card"><h2>Kỹ năng giao tiếp</h2></div>
+        <div class="card"><h2>Quản trị học</h2></div>
+    </div>
+</body>
+</html>

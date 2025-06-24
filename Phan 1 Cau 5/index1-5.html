@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #dfdeff;
+        }
+        .navbar {
+        display: flex;
+        justify-content: space-around;
+        background-color: #222;
+        padding: 1rem 0;
+        }
+        .navbar a {
+        color: white;
+        text-decoration: none;
+        position: relative;
+        font-size: 1.1rem;
+        transition: color 0.3s ease;
+        }
+        .navbar a:hover {
+        color: #00bfff;
+        }
+        .navbar a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: #00bfff;
+        transition: width 0.4s ease;
+        }
+        .navbar a:hover::after {
+        width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Trang chủ</a>
+        <a href="#">Giới thiệu</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+</body>
+</html>
